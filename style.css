@@ -68,23 +68,58 @@ div.head-image {
 .head-logo-container {
     display: flex;
     justify-content: flex-end;
-    gap: 10px;
+    gap: 20px;
     padding-right: 15px;
 }
 
 .logo {
-    height: 30px;
-    width: 30px;
-}
-
-img {
-    width: 450px;
-    height: 400px;
+    height: 40px;
+    width: 40px;
 }
 
 h1 {
     font-size: 3rem;
     font-weight: 900;
+}
+
+footer {
+    width: 100vw;
+    background-color: #0891B2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+.footer-info h1 {
+    color: white;
+    font-stretch: condensed;
+    margin-bottom: 2rem;
+}
+
+.foot-description, .address, .telephone-container, .email-container  {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+
+.telephone-container, .email-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-logos {
+    display: flex;
+    gap: 2rem;
+}
+
+footer img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
 }
 
 @media (max-width: 700px) {
