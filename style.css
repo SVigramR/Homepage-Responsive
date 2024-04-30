@@ -1,0 +1,112 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    /* width: 100vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.head-container {
+    position: relative;
+    min-height: calc(200px + 40vh);
+    /* margin: 2rem; */
+}
+
+div.head-image {
+    background-image: url('images/jedi-knight.png');
+    background-position: center;
+    min-width: 550px;
+    min-height: 550px;
+    float: left;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+    margin-right: 20px;
+}
+
+.head-image h1{
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.head-info {
+    max-width: 1900px;
+    background-color: white;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, .5);
+    padding: 50px;
+    padding: 30px;
+    padding-left: 60px;
+    padding-top: 60px;
+    margin-left: 90px;
+    margin-top: 60px;
+    margin-right: 60px;
+}
+
+.head-info p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.head-logo-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 15px;
+}
+
+.logo {
+    height: 30px;
+    width: 30px;
+}
+
+img {
+    width: 450px;
+    height: 400px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+@media (max-width: 700px) {
+    .head-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .head-image {
+        margin-top: 30px !important;
+    }
+
+    .head-info {
+        margin-left: 42px;
+        margin-right: 42px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .head-image {
+        min-width: 400px !important;
+        min-height: 440px !important;
+    }
+}
